@@ -5,7 +5,7 @@ const animalsData = [
   {
     name: "Madra",
     image: "/images/ainmhite/madra.svg",
-    audio: "/audio/ainmhithe/madra.mp3",
+    audio: "https://jumpshare.com/s/fdbXdowithFZRlwAprtI",
   },
   {
     name: "Cat",
@@ -76,8 +76,8 @@ const Ainmhite = () => {
         data={animalsData}
         questionText="Céard é an focal ceart don ainmhí seo?"
         resultTexts={{
-          correct: "Ceart agat!",
-          incorrect: "Déan iarracht eile!",
+          correct: "Ceart agat! 😎",
+          incorrect: "Déan iarracht eile! 😠",
         }}
       />
     </div>

@@ -61,8 +61,8 @@ const Dathanna = () => {
         data={colorsData}
         questionText="Céard é an focal ceart don dath seo?"
         resultTexts={{
-          correct: "Iontach!",
-          incorrect: "Déan iarracht eile!",
+          correct: "Iontach! 😁",
+          incorrect: "Níl sé sin ceart! 😞",
         }}
       />
     </div>

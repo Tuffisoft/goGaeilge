@@ -11,7 +11,7 @@ export default function Home() {
     <>
       {/* Container for home page */}
       <div className="flex flex-col items-center justify-center h-full">
-        <h1 className="text-4xl text-ggPurple font-bold">
+        <h1 className="text-4xl text-ggPurple font-bold text-center">
           Fáilte go goGaeilge
         </h1>
         <p className="text-lg text-center mt-4 px-24">
@@ -19,8 +19,12 @@ export default function Home() {
           do dhaoine ag foghlaim na teanga.
         </p>
 
-        {/* Container for links */}
-        <div className="flex flex-col md:flex-row items-center justify-center mt-8">
+        {/* Container word games */}
+        <h2 className="text-2xl text-ggPurple font-bold mt-8">
+          Céard é an focal ceart?
+        </h2>
+        <div className="flex flex-col md:flex-row items-center justify-center">
+          
           <LinkBox name="Dathanna" image={dathanna} link="/cluichí/dathanna" />
           <LinkBox
             name="Uimhreacha"

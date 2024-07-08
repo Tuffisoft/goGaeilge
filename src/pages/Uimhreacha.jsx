@@ -61,8 +61,8 @@ const Uimhireacha = () => {
         data={numbersData}
         questionText="Céard é an focal ceart don uimhir seo?"
         resultTexts={{
-          correct: "Sin é!",
-          incorrect: "Déan iarracht eile!",
+          correct: "An-mhaith! 🎉",
+          incorrect: "Mí-cheart! 😢",
         }}
       />
     </div>

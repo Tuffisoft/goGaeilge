@@ -12,7 +12,7 @@ export default function Header() {
             <div className="logo flex justify-center md:justify-start">
               <Link to="/">
                 <img
-                  src="./logo.svg"
+                  src="/logo.svg"
                   alt="The logo of goGaeilge"
                   className="w-48"
                 />
@@ -21,11 +21,14 @@ export default function Header() {
             {/* Logo ends */}
 
             {/* Menu */}
-            <nav className="menu flex flex-col md:flex-row justify-center md:justify-end space-y-2 md:space-y-0 md:space-x-4">
+            <nav className="menu flex flex-col md:flex-row justify-center md:justify-end text-center space-y-2 md:space-y-0 md:space-x-4">
               <Link to="/muide" className="text-ggPurple hover:text-ggBlue">
                 Cé muid?
               </Link>
-              <Link to="/teangmháil" className="text-ggPurple hover:text-ggBlue">
+              <Link
+                to="/teangmháil"
+                className="text-ggPurple hover:text-ggBlue"
+              >
                 Teangmháil
               </Link>
             </nav>

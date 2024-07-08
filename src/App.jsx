@@ -12,6 +12,7 @@ import Uimhireacha from "./pages/Uimhreacha";
 
 //components
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/cluichí/dathanna" element={<Dathanna />} />
           <Route path="/cluichí/uimhreacha" element={<Uimhireacha />} />
         </Routes>
+        <Footer />  
       </div>
     </>
   );

@@ -28,7 +28,7 @@ const PickTheWordGame = ({ data, questionText, resultTexts }) => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1>{questionText}</h1>
+      <h1 className="font-bold text-ggPurple ">{questionText}</h1>
       {correctItem && (
         <>
           <img
