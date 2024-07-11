@@ -13,9 +13,12 @@ import Torthai from "./pages/Torthai.jsx";
 import Glasrai from "./pages/Glasrai.jsx";
 import Aimsir from "./pages/Aimsir.jsx";
 
+import PolasaíPríobháideachta from "./pages/PrivacyPolicy.jsx";
+
 //components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import CookieInfo from "./components/CookieInfo.jsx";
 
 function App() {
   return (
@@ -30,7 +33,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/muide" element={<About />} />
-            <Route path="/teangmháil" element={<Contact />} />
+            <Route path="/teagmháil" element={<Contact />} />
             <Route path="/cluichí" element={<Games />} />
             <Route path="/cluichí/ainmhite" element={<Ainmhite />} />
             <Route path="/cluichí/dathanna" element={<Dathanna />} />
@@ -38,7 +41,14 @@ function App() {
             <Route path="/cluichí/torthaí" element={<Torthai />} />
             <Route path="/cluichí/glasraí" element={<Glasrai />} />
             <Route path="/cluichí/aimsir" element={<Aimsir />} />
+            <Route
+              path="/polasaí-príobháideachta"
+              element={<PolasaíPríobháideachta />}
+            />
           </Routes>
+          {/* Cookie info */}
+          <CookieInfo />
+          {/* Container for footer */}
           <Footer />
         </div>
       </div>
