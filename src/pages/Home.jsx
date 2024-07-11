@@ -5,6 +5,9 @@ import LinkBox from "../components/LinkBox";
 import dathanna from "/images/linkbox/dathanna.svg";
 import uimhreacha from "/images/linkbox/uimhreacha.svg";
 import ainmhite from "/images/linkbox/ainmhite.svg";
+import aimsir from "/images/linkbox/aimsir.svg";
+import torthaí from "/images/linkbox/torthaí.svg";
+import glasraí from "/images/linkbox/glasraí.svg";
 
 export default function Home() {
   return (
@@ -23,8 +26,7 @@ export default function Home() {
         <h2 className="text-2xl text-ggPurple font-bold mt-8">
           Céard é an focal ceart?
         </h2>
-        <div className="flex flex-col md:flex-row items-center justify-center">
-          
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
           <LinkBox name="Dathanna" image={dathanna} link="/cluichí/dathanna" />
           <LinkBox
             name="Uimhreacha"
@@ -32,6 +34,9 @@ export default function Home() {
             link="/cluichí/uimhreacha"
           />
           <LinkBox name="Ainmhite" image={ainmhite} link="/cluichí/ainmhite" />
+          <LinkBox name="Aimsir" image={aimsir} link="/cluichí/aimsir" />
+          <LinkBox name="Torthaí" image={torthaí} link="/cluichí/torthaí" />
+          <LinkBox name="Glasraí" image={glasraí} link="/cluichí/glasraí" />
         </div>
       </div>
     </>

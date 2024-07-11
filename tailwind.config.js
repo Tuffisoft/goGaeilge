@@ -11,7 +11,7 @@ module.exports = {
   prefix: "",
   theme: {
     fontFamily: {
-      sans: ["Lexend", "sans-serif"],
+      lex: ["Lexend", "sans-serif"],
     },
     colors: {
       ggSilver: "#D0D9D4",

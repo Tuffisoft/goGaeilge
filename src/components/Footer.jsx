@@ -1,7 +1,7 @@
 export default function Footer() {
   return <>
     {/* Container for footer */}
-    <footer className="footer-container p-16">
+    <footer className="footer-container p-4">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           {/* Logo */}

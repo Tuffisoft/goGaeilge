@@ -29,7 +29,7 @@ export default function Header() {
                 to="/teangmháil"
                 className="text-ggPurple hover:text-ggBlue"
               >
-                Teangmháil
+                Teagmháil
               </Link>
             </nav>
             {/* Menu ends */}

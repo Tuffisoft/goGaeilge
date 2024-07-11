@@ -3,52 +3,52 @@ import PickTheWordGame from "../components/PickTheWordGame";
 
 const colorsData = [
   {
-    name: "Bán",
+    name: "bán",
     image: "/images/dathanna/bán.svg",
     audio: "/audio/ainmhithe/madra.mp3",
   },
   {
-    name: "Buí",
+    name: "buí",
     image: "/images/dathanna/buí.svg",
     audio: "/audio/ainmhithe/cat.mp3",
   },
   {
-    name: "Corcra",
+    name: "corcra",
     image: "/images/dathanna/corcra.svg",
     audio: "/audio/ainmhithe/béar.mp3",
   },
   {
-    name: "Dearg",
+    name: "dearg",
     image: "/images/dathanna/dearg.svg",
     audio: "/audio/ainmhithe/leon.mp3",
   },
   {
-    name: "Donn",
+    name: "donn",
     image: "/images/dathanna/donn.svg",
     audio: "/audio/ainmhithe/cóála.mp3",
   },
   {
-    name: "Glas",
+    name: "glas",
     image: "/images/dathanna/glas.svg",
     audio: "/audio/ainmhithe/coinín.mp3",
   },
   {
-    name: "Gorm",
+    name: "gorm",
     image: "/images/dathanna/gorm.svg",
     audio: "/audio/ainmhithe/panda.mp3",
   },
   {
-    name: "Liath",
+    name: "liath",
     image: "/images/dathanna/liath.svg",
     audio: "/audio/ainmhithe/eilifint.mp3",
   },
   {
-    name: "Oráiste",
+    name: "oráiste",
     image: "/images/dathanna/oráiste.svg",
     audio: "/audio/ainmhithe/piongain.mp3",
   },
   {
-    name: "Pink",
+    name: "bándearg",
     image: "/images/dathanna/pink.svg",
     audio: "/audio/ainmhithe/séabra.mp3",
   },
