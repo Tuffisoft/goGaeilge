@@ -1,5 +1,5 @@
 //react
-import useEffect from "react";
+import { useEffect } from "react";
 
 //component
 import PickTheWordGame from "../components/PickTheWordGame";
@@ -88,7 +88,7 @@ const numbersData = [
   },
 ];
 
-const Uimhireacha = () => {
+const Uimhreacha = () => {
   const { correctText, incorrectText, refreshTexts } = useResults();
   useEffect(() => {
     refreshTexts();
@@ -108,4 +108,4 @@ const Uimhireacha = () => {
   );
 };
 
-export default Uimhireacha;
+export default Uimhreacha;

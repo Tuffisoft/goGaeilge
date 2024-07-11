@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 import Games from "./pages/Games";
 import Ainmhite from "./pages/Ainmhite.jsx";
 import Dathanna from "./pages/Dathanna.jsx";
-import Uimhireacha from "./pages/Uimhreacha.jsx";
+import Uimhreacha from "./pages/Uimhreacha.jsx";
 import Torthai from "./pages/Torthai.jsx";
 import Glasrai from "./pages/Glasrai.jsx";
 import Aimsir from "./pages/Aimsir.jsx";
@@ -37,7 +37,7 @@ function App() {
             <Route path="/cluichí" element={<Games />} />
             <Route path="/cluichí/ainmhite" element={<Ainmhite />} />
             <Route path="/cluichí/dathanna" element={<Dathanna />} />
-            <Route path="/cluichí/uimhreacha" element={<Uimhireacha />} />
+            <Route path="/cluichí/uimhreacha" element={<Uimhreacha />} />
             <Route path="/cluichí/torthaí" element={<Torthai />} />
             <Route path="/cluichí/glasraí" element={<Glasrai />} />
             <Route path="/cluichí/aimsir" element={<Aimsir />} />
