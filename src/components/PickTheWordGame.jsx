@@ -27,8 +27,8 @@ const PickTheWordGame = ({ data, questionText, resultTexts }) => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h1 className="font-bold text-ggPurple ">{questionText}</h1>
+    <div className="flex flex-col justify-center items-center min-h-96">
+      <h1 className="text-center font-bold text-ggPurple ">{questionText}</h1>
       {correctItem && (
         <>
           <img
@@ -36,7 +36,7 @@ const PickTheWordGame = ({ data, questionText, resultTexts }) => {
             alt={correctItem.name}
             className="w-64 h-64"
           />
-          <div className="flex">
+          <div className="grid grid-cols-2 md:grid-cols-4">
             {gameItems.map((item) => (
               <button
                 key={item.name}
@@ -47,7 +47,9 @@ const PickTheWordGame = ({ data, questionText, resultTexts }) => {
               </button>
             ))}
           </div>
-          {result && <div className="text-ggPurple font-bold">{result}</div>}
+          <div className="result-container min-h-12">
+            {result && <div className="text-ggPurple font-bold">{result}</div>}
+          </div>
         </>
       )}
     </div>

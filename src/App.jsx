@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       {/* Container for background */}
-      <div className="background min-h-dvh bg-ggSilver font-lex">
+      <div className="background min-h-dvh bg-ggWhite font-lex">
         {/* Container for grainy texture background */}
         <div className="grainy-background min-h-dvh">
           {/* Container for header */}

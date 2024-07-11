@@ -1,5 +1,9 @@
+//react
+import useEffect from "react";
+
 //component
 import PickTheWordGame from "../components/PickTheWordGame";
+import useResults from "../components/Results";
 
 const numbersData = [
   {
@@ -85,14 +89,19 @@ const numbersData = [
 ];
 
 const Uimhireacha = () => {
+  const { correctText, incorrectText, refreshTexts } = useResults();
+  useEffect(() => {
+    refreshTexts();
+  }, []);
+
   return (
     <div className="">
       <PickTheWordGame
         data={numbersData}
         questionText="Céard é an focal ceart don uimhir seo?"
         resultTexts={{
-          correct: "An-mhaith! 🎉",
-          incorrect: "Mí-cheart! 😢",
+          correct: correctText,
+          incorrect: incorrectText,
         }}
       />
     </div>

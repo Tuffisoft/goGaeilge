@@ -19,6 +19,7 @@ module.exports = {
       ggBlue: "#0388A6",
       ggBrownLight: "#8C5637",
       ggBrownDark: "#402718",
+      ggWhite: "#F9F9F9",
     },
     container: {
       center: true,

@@ -1,5 +1,9 @@
+//react
+import { useEffect } from "react";
+
 //component
 import PickTheWordGame from "../components/PickTheWordGame";
+import useResults from "../components/Results";
 
 const colorsData = [
   {
@@ -55,14 +59,19 @@ const colorsData = [
 ];
 
 const Dathanna = () => {
+  const { correctText, incorrectText, refreshTexts } = useResults();
+  useEffect(() => {
+    refreshTexts();
+  }, []);
+
   return (
     <div className="">
       <PickTheWordGame
         data={colorsData}
         questionText="Céard é an focal ceart don dath seo?"
         resultTexts={{
-          correct: "Iontach! 😁",
-          incorrect: "Níl sé sin ceart! 😞",
+          correct: correctText,
+          incorrect: incorrectText,
         }}
       />
     </div>

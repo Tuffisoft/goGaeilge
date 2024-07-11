@@ -1,5 +1,9 @@
+//react
+import { useEffect } from "react";
+
 //component
 import PickTheWordGame from "../components/PickTheWordGame";
+import useResults from "../components/Results";
 
 const animalsData = [
   {
@@ -85,14 +89,19 @@ const animalsData = [
 ];
 
 const Ainmhite = () => {
+  const { correctText, incorrectText, refreshTexts } = useResults();
+  useEffect(() => {
+    refreshTexts();
+  }, []);
+
   return (
     <div className="">
       <PickTheWordGame
         data={animalsData}
         questionText="Céard é an focal ceart don ainmhí seo?"
         resultTexts={{
-          correct: "Ceart agat! 😎",
-          incorrect: "Déan iarracht eile! 😠",
+          correct: correctText,
+          incorrect: incorrectText,
         }}
       />
     </div>

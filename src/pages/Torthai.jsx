@@ -1,5 +1,9 @@
+//react
+import { useEffect } from "react";
+
 //component
 import PickTheWordGame from "../components/PickTheWordGame";
+import useResults from "../components/Results";
 
 const Data = [
   {
@@ -53,8 +57,8 @@ const Data = [
     audio: "/audio/ainmhithe/piongain.mp3",
   },
   {
-    name: "mealbhachán",
-    image: "/images/torthaí/mealbhachán.svg",
+    name: "mealbhacán",
+    image: "/images/torthaí/mealbhacán.svg",
     audio: "/audio/ainmhithe/piongain.mp3",
   },
   {
@@ -68,8 +72,8 @@ const Data = [
     audio: "/audio/ainmhithe/piongain.mp3",
   },
   {
-    name: "silínní",
-    image: "/images/torthaí/silínní.svg",
+    name: "silíní",
+    image: "/images/torthaí/silíní.svg",
     audio: "/audio/ainmhithe/piongain.mp3",
   },
   {
@@ -85,14 +89,19 @@ const Data = [
 ];
 
 const Torthai = () => {
+  const { correctText, incorrectText, refreshTexts } = useResults();
+  useEffect(() => {
+    refreshTexts();
+  }, []);
+
   return (
     <div className="">
       <PickTheWordGame
         data={Data}
-        questionText="Céard é an focal ceart don cineál aimsir seo?"
+        questionText="Céard é an focal ceart don tortha seo?"
         resultTexts={{
-          correct: "Iontach! 😁",
-          incorrect: "Níl sé sin ceart! 😞",
+          correct: correctText,
+          incorrect: incorrectText,
         }}
       />
     </div>
