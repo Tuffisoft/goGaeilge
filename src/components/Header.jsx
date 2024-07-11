@@ -25,10 +25,7 @@ export default function Header() {
               <Link to="/muide" className="text-ggPurple hover:text-ggBlue">
                 Cé muid?
               </Link>
-              <Link
-                to="/teangmháil"
-                className="text-ggPurple hover:text-ggBlue"
-              >
+              <Link to="/teagmháil" className="text-ggPurple hover:text-ggBlue">
                 Teagmháil
               </Link>
             </nav>
