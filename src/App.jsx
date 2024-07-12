@@ -12,6 +12,7 @@ import Uimhreacha from "./pages/Uimhreacha.jsx";
 import Torthai from "./pages/Torthai.jsx";
 import Glasrai from "./pages/Glasrai.jsx";
 import Aimsir from "./pages/Aimsir.jsx";
+import AbharPriontail from "./pages/AbharPriontail.jsx";
 
 import PolasaíPríobháideachta from "./pages/PrivacyPolicy.jsx";
 
@@ -45,6 +46,7 @@ function App() {
               path="/polasaí-príobháideachta"
               element={<PolasaíPríobháideachta />}
             />
+            <Route path="/ábhar-priontáil" element={<AbharPriontail />} />
           </Routes>
           {/* Cookie info */}
           <CookieInfo />

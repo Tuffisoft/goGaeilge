@@ -28,6 +28,9 @@ export default function Header() {
               <Link to="/léamh" className="text-ggPurple hover:text-ggBlue">
                 Léamh
               </Link>
+              <Link to="/ábhar-priontáil" className="text-ggPurple hover:text-ggBlue">
+              Ábhar Priontáil
+              </Link>
               <Link to="/muide" className="text-ggPurple hover:text-ggBlue">
                 Cé muid?
               </Link>
