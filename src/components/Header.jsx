@@ -22,6 +22,12 @@ export default function Header() {
 
             {/* Menu */}
             <nav className="menu flex flex-col md:flex-row justify-center md:justify-end text-center space-y-2 md:space-y-0 md:space-x-4">
+              <Link to="/cluichí" className="text-ggPurple hover:text-ggBlue">
+                Cluichí
+              </Link>
+              <Link to="/léamh" className="text-ggPurple hover:text-ggBlue">
+                Léamh
+              </Link>
               <Link to="/muide" className="text-ggPurple hover:text-ggBlue">
                 Cé muid?
               </Link>
