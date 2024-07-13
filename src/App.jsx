@@ -13,7 +13,6 @@ import Torthai from "./pages/Torthai.jsx";
 import Glasrai from "./pages/Glasrai.jsx";
 import Aimsir from "./pages/Aimsir.jsx";
 import AbharPriontail from "./pages/AbharPriontail.jsx";
-
 import PolasaíPríobháideachta from "./pages/PrivacyPolicy.jsx";
 
 //components

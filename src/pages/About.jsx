@@ -7,7 +7,7 @@ export default function About() {
       <h1 className="text-4xl font-bold text-center text-ggBlue">
         Cé muid?
       </h1>
-      <p className="text-lg text-ggPurple text-center mt-4 mx-16">
+      <p className="text-lg text-ggPurple text-center mt-4 mx-16 w-3/4">
         Is Éireannach 40 bliain daois mé atá i mo chónaí sa Ghearmáin le breis
         is deich mbliana anuas. Cé gur as teaghlaigh Bhéarla mo thuismitheoirí,
         tógadh le Gaeilge mé. Tá an-bhród orm as mo theanga dhúchais, mar atá ag
