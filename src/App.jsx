@@ -38,8 +38,8 @@ function App() {
             <Route path="/cluichí/ainmhite" element={<Ainmhite />} />
             <Route path="/cluichí/dathanna" element={<Dathanna />} />
             <Route path="/cluichí/uimhreacha" element={<Uimhreacha />} />
-            <Route path="/cluichí/torthaí" element={<Torthai />} />
-            <Route path="/cluichí/glasraí" element={<Glasrai />} />
+            <Route path="/cluichí/torthai" element={<Torthai />} />
+            <Route path="/cluichí/glasrai" element={<Glasrai />} />
             <Route path="/cluichí/aimsir" element={<Aimsir />} />
             <Route
               path="/polasaí-príobháideachta"

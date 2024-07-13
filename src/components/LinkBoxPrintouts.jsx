@@ -20,7 +20,7 @@ export default function LinkBoxPrintouts({ name, image, document }) {
     <div>
       <div
         onClick={handleDownload}
-        className="link-box-printouts flex flex-col items-center justify-center w-64 h-64 m-8 p-4 border-2 border-ggPurple hover:border-ggBlue rounded-lg shadow-xl cursor-pointer"
+        className="link-box-printouts flex flex-col items-center justify-center w-64 h-64 m-8 p-4  border-ggPurple hover:border-ggBlue rounded-2xl shadow-2xl cursor-pointer"
       >
         <p className="text-white text-center font-bold mt-2">{name}</p>
         <img src={image} alt={name} className="mt-2" />

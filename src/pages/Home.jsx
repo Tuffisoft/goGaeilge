@@ -36,7 +36,7 @@ export default function Home() {
           />
           <LinkBox name="Ainmhite" image={ainmhite} link="/cluichí/ainmhite" />
         </div>
-        <h2 className="text-2xl text-ggPurple font-bold mt-8">
+        <h2 className="text-2xl text-ggPurple font-bold mt-8 text-center">
           An fearr leat obair ar páipéir?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
