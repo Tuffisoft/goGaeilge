@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Games from "./pages/Games";
+import BlogList from "./blog/BlogList";
+import BlogPost from "./blog/BlogPost";
 import Ainmhite from "./pages/Ainmhite.jsx";
 import Dathanna from "./pages/Dathanna.jsx";
 import Uimhreacha from "./pages/Uimhreacha.jsx";
@@ -35,6 +37,8 @@ function App() {
             <Route path="/muide" element={<About />} />
             <Route path="/teagmháil" element={<Contact />} />
             <Route path="/cluichí" element={<Games />} />
+            <Route path="/léamh" element={<BlogList />} />
+            <Route path="/léamh/:id" element={<BlogPost />} />
             <Route path="/cluichí/ainmhite" element={<Ainmhite />} />
             <Route path="/cluichí/dathanna" element={<Dathanna />} />
             <Route path="/cluichí/uimhreacha" element={<Uimhreacha />} />

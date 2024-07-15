@@ -1,15 +1,21 @@
-//react-router
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { LiaHamburgerSolid } from "react-icons/lia";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
-      {/* Container for header */}
-      <header className="header-container p-16">
+      <header className="header-container p-16 relative">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+          <div className="flex flex-col items-center">
             {/* Logo */}
-            <div className="logo flex justify-center md:justify-start">
+            <div className="logo mb-4">
               <Link to="/">
                 <img
                   src="/logo.svg"
@@ -20,23 +26,38 @@ export default function Header() {
             </div>
             {/* Logo ends */}
 
+            {/* Hamburger menu button */}
+            <button
+              className="md:hidden text-ggPurple text-2xl"
+              onClick={toggleMenu}
+              aria-label="Toggle menu"
+            >
+              <LiaHamburgerSolid />
+            </button>
+
             {/* Menu */}
-            <nav className="menu flex flex-col md:flex-row justify-center md:justify-end text-center space-y-2 md:space-y-0 md:space-x-4">
-              <Link to="/cluichí" className="text-ggPurple hover:text-ggBlue">
-                Cluichí
-              </Link>
-              <Link to="/léamh" className="text-ggPurple hover:text-ggBlue">
-                Léamh
-              </Link>
-              <Link to="/ábhar-priontáil" className="text-ggPurple hover:text-ggBlue">
-              Ábhar Priontáil
-              </Link>
-              <Link to="/muide" className="text-ggPurple hover:text-ggBlue">
-                Cé muid?
-              </Link>
-              <Link to="/teagmháil" className="text-ggPurple hover:text-ggBlue">
-                Teagmháil
-              </Link>
+            <nav
+              className={`${
+                isMenuOpen ? "block" : "hidden"
+              } md:block w-full md:w-auto`}
+            >
+              <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0 bg-white md:bg-transparent md:shadow-none">
+                <Link to="/cluichí" className="text-ggPurple hover:text-ggBlue">
+                  Cluichí
+                </Link>
+                <Link to="/léamh" className="text-ggPurple hover:text-ggBlue">
+                  Léamh
+                </Link>
+                <Link to="/ábhar-priontáil" className="text-ggPurple hover:text-ggBlue">
+                  Ábhar Priontáil
+                </Link>
+                <Link to="/muide" className="text-ggPurple hover:text-ggBlue">
+                  Cé muid?
+                </Link>
+                <Link to="/teagmháil" className="text-ggPurple hover:text-ggBlue">
+                  Teagmháil
+                </Link>
+              </div>
             </nav>
             {/* Menu ends */}
           </div>

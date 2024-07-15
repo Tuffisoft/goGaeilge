@@ -15,7 +15,7 @@ export default function Home() {
     <>
       {/* Container for home page */}
       <div className="flex flex-col items-center justify-center h-full">
-        <h1 className="text-4xl text-ggPurple font-bold text-center">
+        <h1 className="text-4xl text-ggPurple font-cuba font-bold text-center">
           Fáilte go goGaeilge
         </h1>
         <p className="text-lg text-center mt-4 px-24">

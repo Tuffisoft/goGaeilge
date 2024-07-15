@@ -12,6 +12,7 @@ module.exports = {
   theme: {
     fontFamily: {
       lex: ["Lexend", "sans-serif"],
+      cuba: ["Playwrite CU", "cursive"],
     },
     colors: {
       ggSilver: "#D0D9D4",
