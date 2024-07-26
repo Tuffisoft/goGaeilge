@@ -11,9 +11,9 @@ export default function Header() {
 
   return (
     <>
-      <header className="header-container p-16 relative">
-        <div className="container mx-auto">
-          <div className="flex flex-col items-center">
+      <header className="header-container flex flex-col h-24 items-center justify-center">
+        
+       
             {/* Logo */}
             <div className="logo mb-4">
               <Link to="/">
@@ -48,20 +48,29 @@ export default function Header() {
                 <Link to="/léamh" className="text-ggPurple hover:text-ggBlue">
                   Léamh
                 </Link>
-                <Link to="/ábhar-priontáil" className="text-ggPurple hover:text-ggBlue">
+                <Link
+                  to="/ábhar-priontáil"
+                  className="text-ggPurple hover:text-ggBlue"
+                >
                   Ábhar Priontáil
+                </Link>
+                <Link to="/siopa" className="text-ggPurple hover:text-ggBlue">
+                  Siopa
                 </Link>
                 <Link to="/muide" className="text-ggPurple hover:text-ggBlue">
                   Cé muid?
                 </Link>
-                <Link to="/teagmháil" className="text-ggPurple hover:text-ggBlue">
+                <Link
+                  to="/teagmháil"
+                  className="text-ggPurple hover:text-ggBlue"
+                >
                   Teagmháil
                 </Link>
               </div>
             </nav>
             {/* Menu ends */}
-          </div>
-        </div>
+ 
+
       </header>
     </>
   );

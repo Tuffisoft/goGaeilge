@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       {/* Container for home page */}
-      <div className="flex flex-col items-center justify-center h-full">
+      <main className="grid place-items-center text-center">
         <h1 className="text-4xl text-ggPurple font-cuba font-bold text-center">
           Fáilte go goGaeilge
         </h1>
@@ -27,7 +27,7 @@ export default function Home() {
         <h2 className="text-2xl text-ggPurple font-bold mt-8">
           Céard é an focal ceart?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
           <LinkBox name="Dathanna" image={dathanna} link="/cluichí/dathanna" />
           <LinkBox
             name="Uimhreacha"
@@ -39,7 +39,7 @@ export default function Home() {
         <h2 className="text-2xl text-ggPurple font-bold mt-8 text-center">
           An fearr leat obair ar páipéir?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
           <LinkBoxPrintouts
             name="Ainmhithe"
             image={ainmhitePDF}
@@ -56,7 +56,7 @@ export default function Home() {
             document="/printables/glasrai-lch-1.pdf"
           />
         </div>
-      </div>
+      </main>
     </>
   );
 }

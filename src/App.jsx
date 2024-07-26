@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Games from "./pages/Games";
 import BlogList from "./blog/BlogList";
 import BlogPost from "./blog/BlogPost";
+import Siopa from "./pages/Siopa";
 import Ainmhite from "./pages/Ainmhite.jsx";
 import Dathanna from "./pages/Dathanna.jsx";
 import Uimhreacha from "./pages/Uimhreacha.jsx";
@@ -16,6 +17,7 @@ import Glasrai from "./pages/Glasrai.jsx";
 import Aimsir from "./pages/Aimsir.jsx";
 import AbharPriontail from "./pages/AbharPriontail.jsx";
 import PolasaíPríobháideachta from "./pages/PrivacyPolicy.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 //components
 import Header from "./components/Header";
@@ -25,10 +27,10 @@ import CookieInfo from "./components/CookieInfo.jsx";
 function App() {
   return (
     <>
-      {/* Container for background */}
-      <div className="background min-h-dvh bg-ggWhite font-lex">
+      {/* Container */}
+      <div className="background grid min-h-[100dvh] grid-rows-[auto_1fr_auto] bg-ggWhite font-lex">
         {/* Container for grainy texture background */}
-        <div className="grainy-background min-h-dvh">
+        <div className="grainy-background">
           {/* Container for header */}
           <Header />
           {/* Routes for pages */}
@@ -39,6 +41,7 @@ function App() {
             <Route path="/cluichí" element={<Games />} />
             <Route path="/léamh" element={<BlogList />} />
             <Route path="/léamh/:id" element={<BlogPost />} />
+            <Route path="/siopa" element={<Siopa />} />
             <Route path="/cluichí/ainmhite" element={<Ainmhite />} />
             <Route path="/cluichí/dathanna" element={<Dathanna />} />
             <Route path="/cluichí/uimhreacha" element={<Uimhreacha />} />
@@ -50,6 +53,8 @@ function App() {
               element={<PolasaíPríobháideachta />}
             />
             <Route path="/ábhar-priontáil" element={<AbharPriontail />} />
+            {/* 404 route */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
           {/* Cookie info */}
           <CookieInfo />
