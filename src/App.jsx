@@ -17,16 +17,22 @@ import Glasrai from "./pages/Glasrai.jsx";
 import Aimsir from "./pages/Aimsir.jsx";
 import AbharPriontail from "./pages/AbharPriontail.jsx";
 import PolasaíPríobháideachta from "./pages/PrivacyPolicy.jsx";
+import ProductDetail from './pages/ProductDetail';
 import NotFound from "./pages/NotFound.jsx";
 
 //components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CookieInfo from "./components/CookieInfo.jsx";
+import Checkout from './components/Checkout';
+
+//context
+import { CartProvider } from './context/CartContext';
 
 function App() {
   return (
     <>
+    <CartProvider>
       {/* Container */}
       <div className="background grid min-h-[100dvh] grid-rows-[auto_1fr_auto] bg-ggWhite font-lex">
         {/* Container for grainy texture background */}
@@ -42,12 +48,14 @@ function App() {
             <Route path="/léamh" element={<BlogList />} />
             <Route path="/léamh/:id" element={<BlogPost />} />
             <Route path="/siopa" element={<Siopa />} />
+            <Route path="/siopa/:id" element={<ProductDetail />} />
             <Route path="/cluichí/ainmhite" element={<Ainmhite />} />
             <Route path="/cluichí/dathanna" element={<Dathanna />} />
             <Route path="/cluichí/uimhreacha" element={<Uimhreacha />} />
             <Route path="/cluichí/torthai" element={<Torthai />} />
             <Route path="/cluichí/glasrai" element={<Glasrai />} />
             <Route path="/cluichí/aimsir" element={<Aimsir />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route
               path="/polasaí-príobháideachta"
               element={<PolasaíPríobháideachta />}
@@ -62,6 +70,7 @@ function App() {
           <Footer />
         </div>
       </div>
+    </CartProvider>
     </>
   );
 }

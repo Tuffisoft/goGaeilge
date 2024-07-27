@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../printful/printful";
 
+import { Link } from "react-router-dom";
+
 function Siopa() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -30,13 +32,22 @@ function Siopa() {
       <h1 className="mb-4">An Siopa</h1>
       <div className="product-grid grid grid-cols-2 gap-4 justify-center items-center">
         {products.map((product) => (
-          <div key={product.id} className="product-card border border-ggPurple p-8 rounded-xl">
-            <h2 className="mb-4">{product.name}</h2>
-            <div className="w-32">
-            <img src={product.thumbnail_url} alt={product.name} />
-            </div>
-            <p>{product.retail_price} €</p>
-          </div>
+          <>
+            <Link to={`/siopa/${product.id}`}>
+              <div
+                key={product.id}
+                className="product-card border border-ggPurple p-8 rounded-xl"
+              >
+                <h2 className="mb-4">{product.name}</h2>
+                <div className="w-32">
+                  <img src={product.thumbnail_url} alt={product.name} />
+                </div>
+                <p>{product.retail_price} €</p>
+                 
+                </div>
+              
+            </Link>
+          </>
         ))}
       </div>
     </div>
