@@ -3,7 +3,7 @@ import PayPalDonateButton from "../components/PayPalDonateButton";
 
 export default function About() {
   return (
-    <div className="min-h-96 flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center min-h-full">
       <h1 className="text-4xl font-bold text-center text-ggBlue">Cé muid?</h1>
       <p className="text-lg text-ggPurple text-center mt-4 mx-16  md:w-3/4">
         Is Éireannach 40 bliain daois mé atá i mo chónaí sa Ghearmáin le breis

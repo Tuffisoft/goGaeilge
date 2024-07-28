@@ -13,7 +13,7 @@ export default function Games() {
   return (
     <>
       {/* Container for page */}
-      <div className="flex flex-col items-center justify-center h-full">
+      <div className="flex flex-col items-center justify-center min-h-screen">
         <h1 className="text-4xl text-ggPurple font-bold text-center">
           Cluichí
         </h1>
@@ -26,7 +26,6 @@ export default function Games() {
           Céard é an focal ceart?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-          
           <LinkBox
             name="Uimhreacha"
             image={uimhreacha}

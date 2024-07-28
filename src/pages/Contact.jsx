@@ -4,7 +4,7 @@ function Contact() {
   const [state, handleSubmit] = useForm("xblrllnb");
   if (state.succeeded) {
     return (
-      <div className="thank-you-message flex flex-col justify-center items-center text-2xl min-h-96">
+      <div className="thank-you-message flex flex-col justify-center items-center text-2xl min-h-full">
         <p>Go raibh míle maith agat.</p>
         <p>Beidh muid i teagmháil go luath.</p>
       </div>

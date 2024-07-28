@@ -51,7 +51,7 @@ export default function Header() {
             isMenuOpen ? "block" : "hidden"
           } md:block w-full md:w-auto`}
         >
-          <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0 bg-ggWhite md:bg-transparent absolute md:relative left-1/2 md:left-0 transform -translate-x-1/2 md:translate-x-0 z-10 w-48 md:w-auto border-2 md:border-0 border-ggPurple">
+          <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0 bg-ggWhite md:bg-ggTransparent absolute md:relative left-1/2 md:left-0 transform -translate-x-1/2 md:translate-x-0 z-10 w-48 md:w-auto border-2 md:border-0 border-ggPurple rounded-xl">
             {/* Close button - only for mobile */}
             <div className="w-full flex justify-center mb-2 md:hidden">
               <button

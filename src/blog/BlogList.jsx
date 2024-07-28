@@ -35,7 +35,7 @@ export default function BlogList() {
   console.log(posts);
 
   return (
-    <div className="blog-list flex flex-col justify-center items-center">
+    <div className="blog-list flex flex-col justify-center items-center min-h-screen">
       <h1 className="text-4xl text-ggPurple font-bold">Cúpla alt le léamh</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 justify-center">
         {posts.length > 0 ? (

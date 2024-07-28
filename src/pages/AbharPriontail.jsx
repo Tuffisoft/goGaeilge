@@ -61,7 +61,7 @@ const data = [
 export default function AbharPriontail() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-full">
+      <div className="flex flex-col items-center justify-center">
         <h1 className="text-4xl text-ggPurple font-bold text-center">
           Ábhar Priontáil
         </h1>

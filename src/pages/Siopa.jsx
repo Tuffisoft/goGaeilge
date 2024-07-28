@@ -28,7 +28,7 @@ function Siopa() {
   if (error) return <div>{error}</div>;
 
   return (
-    <div className="shop-container flex flex-col justify-center items-center">
+    <div className="shop-container flex flex-col justify-center items-center min-h-full">
       <h1 className="mb-4">An Siopa</h1>
       <div className="product-grid grid grid-cols-2 gap-4 justify-center items-center">
         {products.map((product) => (

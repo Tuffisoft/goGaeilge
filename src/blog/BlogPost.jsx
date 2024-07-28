@@ -37,7 +37,7 @@ export default function BlogPost() {
   }
 
   return (
-    <div className="blog-post flex flex-col justify-center items-center">
+    <div className="blog-post flex flex-col justify-center items-center min-h-screen">
       <div className="image w-32">
         <img
           src={post.fields.picture.fields.file.url}

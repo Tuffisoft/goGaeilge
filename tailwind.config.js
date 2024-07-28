@@ -20,7 +20,13 @@ export const theme = {
     ggBrownLight: "#8C5637",
     ggBrownDark: "#402718",
     ggWhite: "#F9F9F9",
+    ggTransparent: "rgba(0,0,0,0)",
   },
 };
-export const extend = {};
+export const extend = {
+  backgroundImage: {
+    "grassBG": "url('/images/backgrounds/grass.svg')",
+    "footer-texture": "url('/img/footer-texture.png')",
+  },
+};
 export const plugins = [import("tailwindcss"), import("autoprefixer")];
